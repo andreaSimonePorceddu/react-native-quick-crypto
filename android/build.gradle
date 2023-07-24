@@ -135,6 +135,4 @@ dependencies {
 
   implementation "com.facebook.react:react-android:"
   implementation "com.facebook.react:hermes-android:"
-  extractHeaders("com.facebook.fbjni:fbjni:0.4.0:headers")
-  extractJNI("com.facebook.fbjni:fbjni:0.4.0")
 }
