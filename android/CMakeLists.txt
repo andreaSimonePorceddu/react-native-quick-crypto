@@ -10,7 +10,7 @@ set(CMAKE_CXX_STANDARD 17)
 # set (CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g")
 
 # Consume shared libraries and headers from prefabs
-find_package(fbjni 0.4.0 REQUIRED CONFIG)
+find_package(fbjni REQUIRED CONFIG ver=0.0.4)
 find_package(ReactAndroid REQUIRED CONFIG)
 
 include_directories(
@@ -72,7 +72,7 @@ find_package(openssl REQUIRED CONFIG)
 target_link_libraries(
         ${PACKAGE_NAME}
         ReactAndroid::turbomodulejsijni
-        fbjni::fbjni
+        fbjni::ver
         ${log-lib}
         ReactAndroid::jsi
         ReactAndroid::reactnativejni
